@@ -1,5 +1,5 @@
 operacao = (operacao) => {
-    
+
 }
 
 btnNumero = (valor) => {
@@ -16,5 +16,4 @@ multiplicar = () => {
     let display = document.getElementById('display')
     n1 = display.value
     display.value = ""
-
 }

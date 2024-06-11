@@ -1,3 +1,7 @@
+operacao = (operacao) => {
+    
+}
+
 btnNumero = (valor) => {
     let display = document.getElementById('display')
     display.value += valor
@@ -9,5 +13,8 @@ apagar = () => {
 }
 
 multiplicar = () => {
-    let display = document.getElementById()
+    let display = document.getElementById('display')
+    n1 = display.value
+    display.value = ""
+
 }

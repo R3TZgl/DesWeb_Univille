@@ -1,20 +1,22 @@
+
 var n1 = 0
 prox = false
-
 operacao = (operacao) => {
 
-    let display = document.getElementById('display')
+    var display = document.getElementById('display')
 
     if (!prox){
         n1 = display.value
         display.value = ""
         prox = true
     }else{
-
-    }
-
-    if (operacao === 'X' & prox) {
-        multiplicar(n1, n2)
+        if (operacao === 'X' & prox) {
+            multiplicar(n1, n2, display)
+            prox = false
+        }
+        if (operacao === '=') {
+            display.value = n1
+        }
     }
 }
 
@@ -28,6 +30,7 @@ apagar = () => {
     display.value = ""
 }
 
-multiplicar = () => {
-    
+multiplicar = (n1, n2, display) => {
+    display.value = n1 * n2
+    n1 = display.value
 }
